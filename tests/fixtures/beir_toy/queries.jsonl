@@ -1,0 +1,50 @@
+{"qid": "q01", "query": "which classic lexical ranking formula uses term frequency and length normalization", "relevant": ["d01"]}
+{"qid": "q02", "query": "retrieving passages with dual BERT encoders and inner product", "relevant": ["d02"]}
+{"qid": "q03", "query": "zero-shot retrieval by embedding a generated fake answer", "relevant": ["d03"]}
+{"qid": "q04", "query": "why is joint query document encoding more accurate but slower", "relevant": ["d04"]}
+{"qid": "q05", "query": "graph based approximate nearest neighbor search with layers", "relevant": ["d05"]}
+{"qid": "q06", "query": "compressing embedding vectors with sub-vector codebooks", "relevant": ["d06"]}
+{"qid": "q07", "query": "merging multiple rankings using inverse rank positions", "relevant": ["d07"]}
+{"qid": "q08", "query": "evaluation metric with logarithmic position discount for graded relevance", "relevant": ["d08"]}
+{"qid": "q09", "query": "metric based on the position of the first correct answer", "relevant": ["d09"]}
+{"qid": "q10", "query": "adding words from top results back into the query", "relevant": ["d10"]}
+{"qid": "q11", "query": "language model alternating thoughts and tool calls", "relevant": ["d11"]}
+{"qid": "q12", "query": "prompting for step by step intermediate reasoning", "relevant": ["d12"]}
+{"qid": "q13", "query": "majority vote over several sampled reasoning chains", "relevant": ["d13"]}
+{"qid": "q14", "query": "model learning by itself when to invoke external APIs", "relevant": ["d14"]}
+{"qid": "q15", "query": "standard protocol connecting LLM clients to tools and resources", "relevant": ["d15"]}
+{"qid": "q16", "query": "lightweight remote procedure call format with ids and methods", "relevant": ["d16"]}
+{"qid": "q17", "query": "siamese BERT network for comparable sentence vectors", "relevant": ["d17"]}
+{"qid": "q18", "query": "training embeddings using other batch items as negatives", "relevant": ["d18"]}
+{"qid": "q19", "query": "choosing difficult wrong passages for retriever training", "relevant": ["d19"]}
+{"qid": "q20", "query": "compressing a big model by teaching a smaller one to mimic it", "relevant": ["d20"]}
+{"qid": "q21", "query": "grounding generated answers in fetched documents", "relevant": ["d21"]}
+{"qid": "q22", "query": "index small pieces but return the bigger surrounding section", "relevant": ["d22"]}
+{"qid": "q23", "query": "retrieve one sentence then add the sentences around it", "relevant": ["d23"]}
+{"qid": "q24", "query": "diversify results by penalizing redundancy", "relevant": ["d24"]}
+{"qid": "q25", "query": "data structure mapping words to lists of documents", "relevant": ["d25"]}
+{"qid": "q26", "query": "subword tokenization by merging frequent symbol pairs", "relevant": ["d26"]}
+{"qid": "q27", "query": "neural architecture based only on attention without recurrence", "relevant": ["d27"]}
+{"qid": "q28", "query": "how token order information is added to attention models", "relevant": ["d28"]}
+{"qid": "q29", "query": "normalizing activations per example across features", "relevant": ["d29"]}
+{"qid": "q30", "query": "regularization by randomly disabling neurons", "relevant": ["d30"]}
+{"qid": "q31", "query": "parameter efficient fine-tuning with low rank matrices", "relevant": ["d31"]}
+{"qid": "q32", "query": "training on tasks written as instructions", "relevant": ["d32"]}
+{"qid": "q33", "query": "aligning models with a reward model learned from human preferences", "relevant": ["d33"]}
+{"qid": "q34", "query": "preference alignment without training a separate reward model", "relevant": ["d34"]}
+{"qid": "q35", "query": "models that judge their own outputs to make training data", "relevant": ["d35"]}
+{"qid": "q36", "query": "decoding by keeping several best partial hypotheses", "relevant": ["d36"]}
+{"qid": "q37", "query": "sampling from the top probability mass cutoff", "relevant": ["d37"]}
+{"qid": "q38", "query": "exponentiated average negative log likelihood", "relevant": ["d38"]}
+{"qid": "q39", "query": "dividing work among planner coder and critic agents", "relevant": ["d39"]}
+{"qid": "q40", "query": "shared memory coordination pattern for components", "relevant": ["d40"]}
+{"qid": "q41", "query": "stopping repeated agent cycles by fingerprinting state", "relevant": ["d41"]}
+{"qid": "q42", "query": "difference between per task traces and long term knowledge", "relevant": ["d42"]}
+{"qid": "q43", "query": "attack that smuggles malicious instructions through retrieved text", "relevant": ["d43"]}
+{"qid": "q44", "query": "running untrusted code in isolation with resource limits", "relevant": ["d44"]}
+{"qid": "q45", "query": "models producing schema conforming tool arguments", "relevant": ["d45"]}
+{"qid": "q46", "query": "when do dot product and euclidean distance rank the same", "relevant": ["d46"]}
+{"qid": "q47", "query": "token level late interaction retrieval model", "relevant": ["d47"]}
+{"qid": "q48", "query": "learned sparse term weights served by inverted index", "relevant": ["d48"]}
+{"qid": "q49", "query": "heterogeneous zero-shot retrieval benchmark suite", "relevant": ["d49"]}
+{"qid": "q50", "query": "avoid recomputing vectors for documents that did not change", "relevant": ["d50"]}

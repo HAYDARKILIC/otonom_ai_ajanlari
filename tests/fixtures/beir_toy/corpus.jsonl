@@ -1,0 +1,50 @@
+{"id": "d01", "text": "BM25 is a bag-of-words ranking function that scores documents using term frequency, inverse document frequency and document length normalization."}
+{"id": "d02", "text": "Dense passage retrieval encodes questions and passages with two separate BERT encoders and ranks passages by the dot product of their vectors."}
+{"id": "d03", "text": "HyDE prompts a language model to write a hypothetical answer, embeds that synthetic document, and uses it to search the corpus without relevance labels."}
+{"id": "d04", "text": "Cross-encoders concatenate the query and the document into one input so that attention can model token interactions, producing more accurate relevance scores at higher cost."}
+{"id": "d05", "text": "HNSW builds a multi-layer proximity graph where upper layers are sparse, enabling greedy search with roughly logarithmic complexity."}
+{"id": "d06", "text": "Product quantization splits vectors into sub-vectors and replaces each with the index of its nearest centroid, compressing embeddings for memory-efficient search."}
+{"id": "d07", "text": "Reciprocal rank fusion combines several ranked lists by summing the reciprocal of each document's rank plus a constant."}
+{"id": "d08", "text": "Normalized discounted cumulative gain rewards relevant documents near the top of a ranking by dividing gains by the logarithm of their position."}
+{"id": "d09", "text": "Mean reciprocal rank averages the inverse rank of the first relevant result across a set of queries."}
+{"id": "d10", "text": "Query expansion with pseudo relevance feedback adds terms from the top retrieved documents to the original query before searching again."}
+{"id": "d11", "text": "ReAct interleaves reasoning traces with tool actions, letting a language model plan, call external tools and update its plan from observations."}
+{"id": "d12", "text": "Chain-of-thought prompting asks a model to produce intermediate reasoning steps, which improves accuracy on arithmetic and multi-step questions."}
+{"id": "d13", "text": "Self-consistency samples many reasoning paths at nonzero temperature and selects the answer that appears most often."}
+{"id": "d14", "text": "Toolformer teaches a language model to decide when to call APIs such as a calculator or search engine by self-supervised filtering of useful calls."}
+{"id": "d15", "text": "The Model Context Protocol standardizes how applications expose tools, resources and prompts to language model clients over JSON-RPC."}
+{"id": "d16", "text": "JSON-RPC 2.0 is a stateless remote procedure call protocol whose messages carry a method name, parameters and an identifier for matching responses."}
+{"id": "d17", "text": "Sentence-BERT fine-tunes BERT in a siamese network so that sentence embeddings can be compared with cosine similarity efficiently."}
+{"id": "d18", "text": "Contrastive learning with in-batch negatives trains an encoder by pulling paired examples together and pushing other examples in the batch apart."}
+{"id": "d19", "text": "Hard negative mining selects incorrect documents that the current retriever ranks highly, making training examples more informative."}
+{"id": "d20", "text": "Knowledge distillation trains a small student model to imitate the output distribution of a large teacher model."}
+{"id": "d21", "text": "Retrieval-augmented generation conditions a language model on passages fetched from an external corpus to ground its answers."}
+{"id": "d22", "text": "Hierarchical chunking indexes small child chunks for precise matching and returns their larger parent chunks to provide context."}
+{"id": "d23", "text": "Sentence window retrieval embeds single sentences and expands each hit with neighbouring sentences before generation."}
+{"id": "d24", "text": "Maximal marginal relevance reranks results by balancing similarity to the query against redundancy with already selected results."}
+{"id": "d25", "text": "Inverted indexes map each term to a postings list of documents that contain it, which makes keyword search fast."}
+{"id": "d26", "text": "Byte pair encoding builds a subword vocabulary by repeatedly merging the most frequent pair of adjacent symbols."}
+{"id": "d27", "text": "The transformer architecture relies entirely on self-attention and feed-forward layers, removing recurrence from sequence modeling."}
+{"id": "d28", "text": "Positional encodings inject information about token order into transformer inputs because attention itself is permutation invariant."}
+{"id": "d29", "text": "Layer normalization rescales activations across the features of each example, stabilizing the training of deep networks."}
+{"id": "d30", "text": "Dropout randomly zeroes a fraction of activations during training to reduce overfitting."}
+{"id": "d31", "text": "Low-rank adaptation freezes pretrained weights and learns small low-rank update matrices, making fine-tuning cheap."}
+{"id": "d32", "text": "Instruction tuning fine-tunes a language model on many tasks phrased as natural language instructions to improve zero-shot generalization."}
+{"id": "d33", "text": "Reinforcement learning from human feedback trains a reward model on human preference comparisons and optimizes the policy against it."}
+{"id": "d34", "text": "Direct preference optimization fits a policy to preference pairs with a classification-style loss, avoiding an explicit reward model."}
+{"id": "d35", "text": "Self-rewarding language models act as their own judges, generating and scoring responses to create new preference data iteratively."}
+{"id": "d36", "text": "Beam search keeps the highest scoring partial sequences at each decoding step instead of only the single best token."}
+{"id": "d37", "text": "Nucleus sampling draws the next token from the smallest set of tokens whose cumulative probability exceeds a threshold p."}
+{"id": "d38", "text": "Perplexity is the exponential of the average negative log-likelihood and measures how well a language model predicts text."}
+{"id": "d39", "text": "Multi-agent systems split a task among specialized agents, such as a planner, a coder and a critic, that coordinate through shared state."}
+{"id": "d40", "text": "A blackboard architecture lets independent components read from and write to a shared memory that a controller schedules."}
+{"id": "d41", "text": "Loop detection in agent systems hashes the relevant state each turn and stops when the same fingerprint repeats."}
+{"id": "d42", "text": "Episodic memory stores the trace of a single task, while semantic memory keeps distilled knowledge that persists across tasks."}
+{"id": "d43", "text": "Prompt injection hides adversarial instructions inside retrieved content or tool output to hijack a language model agent."}
+{"id": "d44", "text": "Sandboxing executes untrusted generated code in an isolated environment with limited filesystem, network and time."}
+{"id": "d45", "text": "Function calling lets a model emit structured arguments that match a JSON schema so applications can invoke tools reliably."}
+{"id": "d46", "text": "Cosine similarity, inner product and Euclidean distance give identical rankings when all vectors are normalized to unit length."}
+{"id": "d47", "text": "ColBERT keeps one embedding per token and scores documents with late interaction, summing maximum similarities between query and document tokens."}
+{"id": "d48", "text": "SPLADE learns sparse lexical representations with term expansion so that neural relevance can be served from an inverted index."}
+{"id": "d49", "text": "The BEIR benchmark evaluates zero-shot retrieval across heterogeneous datasets such as biomedical, financial and argument retrieval."}
+{"id": "d50", "text": "Caching embeddings of unchanged documents avoids recomputing them on every indexing run and reduces cost."}

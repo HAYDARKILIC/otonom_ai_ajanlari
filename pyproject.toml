@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "otonom-ai-ajanlari"
+version = "0.1.0"
+description = "Otonom yapay zekâ ajanları ve bağlam mühendisliği — MCP, gelişmiş RAG, ReAct ve çoklu ajan sistemleri, sıfırdan."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+# Çekirdek: tüm modüllerin içe aktarılabilmesi ve MCP sunucusu / ReAct ajanı için gerekenler.
+# Ağır model kütüphaneleri isteğe bağlı gruplardadır (aşağıda). Hepsi birden: requirements.txt
+dependencies = [
+    "anthropic>=0.40.0",
+    "openai>=1.40.0",
+    "numpy>=1.26.0",
+    "jsonschema>=4.22.0",
+    "pydantic>=2.8.0",
+    "arxiv>=2.1.3",
+    "structlog>=24.4.0",
+    "python-dotenv>=1.0.1",
+    "PyYAML>=6.0.2",
+    "typer>=0.12.5",
+]
+
+[project.optional-dependencies]
+# Gömme modeli ve cross-encoder (RAG, yeniden sıralama, bitirme projesi)
+ml = ["sentence-transformers>=3.0.0", "transformers>=4.44.0", "torch>=2.3.0"]
+vector = ["chromadb>=0.5.0"]
+milvus = ["pymilvus>=2.4.0"]
+cohere = ["cohere>=5.5.0"]
+notebooks = ["jupyterlab>=4.2.0", "ipywidgets>=8.1.0", "matplotlib>=3.9.0", "seaborn>=0.13.2"]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.6.0",
+    "mypy>=1.11.0",
+    "pre-commit>=3.8.0",
+    "types-PyYAML",
+    "types-requests",
+]
+all = ["otonom-ai-ajanlari[ml,vector,milvus,cohere,notebooks,dev]"]
+
+[project.scripts]
+otonom-mcp = "src.mcp_core.server:main"
+otonom-asistan = "src.academic_assistant.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning:chromadb.*"]
+
+[tool.coverage.run]
+source = ["src"]
+# Alt süreçte çalışan giriş noktası (__main__) birim testlerle ölçülemez.
+omit = ["src/mcp_core/__main__.py"]
+
+[tool.coverage.report]
+fail_under = 85
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "I"]
+# B008: typer.Option(...) varsayılan argümanlarda kullanılır — bu typer'ın standart kalıbıdır.
+ignore = ["B008", "E501"]
+
+[tool.mypy]
+ignore_missing_imports = true
+warn_unused_ignores = true
